@@ -20,14 +20,13 @@ This mirrors a real production network layout used by cloud engineers.
 
 ##  Architecture Diagram
 VPC (10.0.0.0/16)
-│
-├── Public Subnet (10.0.1.0/24)
-│     ├── Internet Gateway
-│     └── Public Route Table (0.0.0.0/0 → IGW)
-│
-└── Private Subnet (10.0.2.0/24)
-├── NAT Gateway
-└── Private Route Table (0.0.0.0/0 → NAT)
+- ── Public Subnet (10.0.1.0/24)
+-      ├── Internet Gateway
+-      └── Public Route Table (0.0.0.0/0 → IGW)
+- 
+- └── Private Subnet (10.0.2.0/24)
+- ├-── NAT Gateway
+- └── Private Route Table (0.0.0.0/0 → NAT)
 
 
 ##  How to Deploy
@@ -40,13 +39,13 @@ terraform destroy
 
 
 This removes all resources created by the project.
-## 📁 Project Structure
+##  Project Structure
 aws-vpc-network-terraform/
-│── main.tf
-│── variables.tf
-│── outputs.tf
-│── providers.tf
-│── README.md
+- ── main.tf
+- ── variables.tf
+- ── outputs.tf
+- ── providers.tf
+- ── README.md
 
 
 ##  Why This Project Matters
