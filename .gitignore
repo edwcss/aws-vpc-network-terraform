@@ -3,3 +3,9 @@
 terraform.tfstate
 terraform.tfstate.backup
 terraform.tfvars
+yes
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+.terraform/
